@@ -1,0 +1,38 @@
+<html>
+    <head> <link rel="stylesheet" type="text/css" href="css.css"> </head>
+
+    <body>
+            
+            <script src="js.js"></script>
+            
+        
+<div class="background-wrap">
+  <div class="background"></div>
+</div>
+
+<form id="accesspanel" action="login" method="post">
+  <h1 id="litheader">ACCESS</h1>
+  <div class="inset">
+    <p>
+      <input type="text" name="username" id="email" placeholder="Email address" input type="email" id="email" name="email"
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="E-mail is must be in a format" required>
+    </p>
+    <p>
+      <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    </p>
+    <div style="text-align: center;">
+      <div class="checkboxouter">
+        <input type="checkbox" name="rememberme" id="remember" value="Remember">
+        <label class="checkbox"></label>
+      </div>
+      <label for="remember">Remember me </label>
+    </div>
+    <input class="loginLoginValue" type="hidden" name="service" value="login" />
+  </div>
+  <p class="p-container">
+    <input type="submit" name="Login" id="go" value="Authorize">
+  </p>
+</form>
+        
+          </body>
+</html>
